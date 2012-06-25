@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <UIAddBookForm>
+    <label>
+      <UITitleStringInput>Title</UITitleStringInput>
+      <UIDescriptionStringInput>Description</UIDescriptionStringInput>
+      <UICategoryStringInput>Category</UICategoryStringInput>
+      <UIPriceStringInput>Price</UIPriceStringInput>
+    </label>
+    <action>
+      <Save>Save</Save>
+      <Edit>Edit</Edit>
+      <Delete>Delete</Delete>
+      <Cancel>Cancel</Cancel>
+    </action>
+  </UIAddBookForm>
+  <UIEditBookForm>
+    <label>
+      <UITitleStringInput>Title</UITitleStringInput>
+      <UIDescriptionStringInput>Description</UIDescriptionStringInput>
+      <UICategoryStringInput>Category</UICategoryStringInput>
+      <UIPriceStringInput>Price</UIPriceStringInput>
+    </label>
+    <action>
+      <Save>Save</Save>
+      <Edit>Edit</Edit>
+      <Delete>Delete</Delete>
+      <Cancel>Cancel</Cancel>
+    </action>
+  </UIEditBookForm>
+   <UIDeleteBookForm>
+    <label>
+      <UITitleStringInput>Title</UITitleStringInput>
+      <UIDescriptionStringInput>Description</UIDescriptionStringInput>
+      <UICategoryStringInput>Category</UICategoryStringInput>
+      <UIPriceStringInput>Price</UIPriceStringInput>
+    </label>
+    <action>
+      <Save>Save</Save>
+      <Edit>Edit</Edit>
+      <Delete>Delete</Delete>
+      <Cancel>Cancel</Cancel>
+    </action>
+  </UIDeleteBookForm>
+</bundle>

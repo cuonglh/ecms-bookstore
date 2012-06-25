@@ -1,0 +1,14 @@
+.UIBasicPortlet .Text {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.UIBasicPortlet .Node {}
+
+.UIBasicPortlet .ChildNode {}
+
+.UIBasicPortlet .ChildNodeProperty {
+	padding-left: 20px;
+	font-style: italic;
+}

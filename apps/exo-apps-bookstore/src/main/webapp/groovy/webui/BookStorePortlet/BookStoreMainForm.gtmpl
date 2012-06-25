@@ -1,0 +1,60 @@
+<%
+    /**
+     * Created by The eXo Platform SAS
+     * Author : eXoPlatform
+     *          chuong.phan@exoplatform.com, phan.le.thanh.chuong@gmail.com
+     * Dec 15, 2009
+     */
+ 
+    import javax.jcr.ValueFormatException;
+    import org.exoplatform.webui.core.UIPopupWindow;
+ 
+    def bookList = uicomponent.getBookList();
+    
+%>
+
+<h1><center>Welcome to my Bookstore application</center></h1>
+
+<div class="$uicomponent.id">
+
+
+<table border="1">
+<tr>
+<td>Category</td>
+<td>Title</td>
+<td>Description</td>
+<td>Price</td>
+<td>Edit</td>
+<td>Delete</td>
+</tr>
+
+    <%
+        for(book in bookList) {
+            %>
+            <tr>
+                <div class="Book">
+                    <td> <%= book.getCategory() %></td>
+                    <td> <%= book.getTitle() %></td>
+                    <td> <%= book.getDescription() %></td>
+                    <td> <%= book.getPrice() %></td>
+                    <td> <a href="javascript: void(0)" onclick="<%= uicomponent.event("EditBook",book.getId()) %>" title="EditBook" class="Action">Edit</a></td>
+                    <td><a href="javascript: void(0)" onclick="<%= uicomponent.event("DeleteBook",book.getId()) %>" title="DeleteBook" class="Action">Delete</a>
+                </div>
+            </tr>
+            <%
+        }
+    %>
+    
+</table>
+<br>
+
+  <% uiform.begin() %>
+       <div class="UIAction">
+         <span class="ActionButton LightBlueStyle"><a class="AddSpaceIcon" href="javascript:void(0);" onclick="<%= uicomponent.event("AddBook") %>">Add new book</a></span>
+       </div>
+  <% uiform.end() %>
+  
+  <div class="UIPopupMySpaces"><% uicomponent.renderChild(UIPopupWindow.class) %></div>
+
+
+    

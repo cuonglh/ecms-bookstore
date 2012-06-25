@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <UIAddBookForm>
+    <label>
+      <UITitleStringInput>Titre</UITitleStringInput>
+      <UIDescriptionStringInput>Description</UIDescriptionStringInput>
+      <UICategoryStringInput>Category</UICategoryStringInput>
+      <UIPriceStringInput>Prix</UIPriceStringInput>
+      
+    </label>
+    <action>
+      <Save>Enregistrer</Save>
+      <Cancel>Annuler</Cancel>
+    </action>
+  </UIAddBookForm>
+</bundle>

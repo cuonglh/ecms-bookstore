@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  <UIAddBookForm>
+    <label>
+      <UITitleStringInput>Ten</UITitleStringInput>
+      <UIDescriptionStringInput>Mieu ta</UIDescriptionStringInput>
+      <UICategoryStringInput>Loai</UICategoryStringInput>
+      <UIPriceStringInput>Gia</UIPriceStringInput>
+    </label>
+    <action>
+      <Save>Luu</Save>
+      <Cancel>Huy</Cancel>
+    </action>
+  </UIAddBookForm>
+</bundle>
